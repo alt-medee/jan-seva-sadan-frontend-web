@@ -15,12 +15,10 @@ const AboutSection = () => (
   <section id="about" className="section-padding bg-background">
     <div className="container mx-auto max-w-6xl">
 
-      {/* Heading */}
       <h2 className="text-3xl font-bold mb-6 text-center">
         🏥 जे. पी. सेवा सदन – Gawpur और Korbadha Patali का विश्वसनीय अस्पताल
       </h2>
 
-      {/* 🔥 Full Width Top Content */}
       <div className="mb-10 space-y-4 text-muted-foreground leading-relaxed">
         <p>
           Gawpur और Korbadha Patali क्षेत्र में स्थित जे. पी. सेवा सदन एक भरोसेमंद और प्रतिष्ठित अस्पताल है,
@@ -39,10 +37,8 @@ const AboutSection = () => (
         </p>
       </div>
 
-      {/* 🔥 Image + Remaining Content */}
       <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* Image Left */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -55,7 +51,6 @@ const AboutSection = () => (
           />
         </motion.div>
 
-        {/* Content Right */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +67,6 @@ const AboutSection = () => (
             हम मरीजों और उनके परिवारों को बीमारी के बारे में सही जानकारी देते हैं।
           </p>
 
-          {/* Features Box */}
           <div className="bg-secondary rounded-xl p-5 mt-4">
             <p className="font-semibold mb-3">🌟 हमारी विशेषताएँ:</p>
 
