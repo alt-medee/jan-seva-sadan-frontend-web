@@ -85,7 +85,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, i) => (
           <button

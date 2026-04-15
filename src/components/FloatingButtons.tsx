@@ -3,7 +3,6 @@ import { MessageCircle, Phone } from "lucide-react";
 
 const FloatingButtons = () => (
   <>
-    {/* WhatsApp */}
     <motion.a
       href="https://wa.me/919798701014"
       target="_blank"
@@ -17,7 +16,6 @@ const FloatingButtons = () => (
       <MessageCircle className="w-7 h-7" />
     </motion.a>
 
-    {/* Call */}
     <motion.a
       href="tel:9798701014"
       className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-xl hover:scale-110 transition-transform"

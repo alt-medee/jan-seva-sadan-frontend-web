@@ -8,7 +8,6 @@ const ContactSection = () => (
       <div className="section-underline" />
 
       <div className="grid lg:grid-cols-2 gap-10">
-        {/* Contact Info Cards */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -59,7 +58,6 @@ const ContactSection = () => (
           </div>
         </motion.div>
 
-        {/* Google Map */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}

@@ -3,11 +3,9 @@ import logo from "../assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-background">
-    {/* Main Footer */}
     <div className="container mx-auto px-4 py-14">
       <div className="grid md:grid-cols-2 gap-10">
         
-        {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-5">
             <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center overflow-hidden">
@@ -23,7 +21,6 @@ const Footer = () => (
 
         </div>
 
-        {/* Contact */}
         <div>
           <h4 className="font-bold text-base mb-5">Contact Info</h4>
           <div className="space-y-4">
@@ -52,7 +49,6 @@ const Footer = () => (
       </div>
     </div>
 
-    {/* Bottom Bar */}
     <div className="border-t border-background/10">
       <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
         <p className="text-xs opacity-40">

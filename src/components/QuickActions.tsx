@@ -9,7 +9,6 @@ const actions = [
 const QuickActions = () => (
   <div className="bg-background shadow-xl border-b border-border relative z-10">
     
-    {/* 🔥 3 columns everywhere */}
     <div className="container mx-auto grid grid-cols-3">
       
       {actions.map((a, i) => (
