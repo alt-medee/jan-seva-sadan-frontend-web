@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import heroImage from "@/assets/hero-hospital.jpg";
+import home from "@/assets/home.jpg";
 import interiorImage from "@/assets/hospital-interior.jpg";
 
 const slides = [
   {
-    image: heroImage,
+    image: home,
     title: "कम खर्च, अत्याधुनिक सुविधा",
     subtitle: "एवं बेहतर स्वास्थ्य के लिए पधारें…",
     desc: "24 घंटा इमरजेंसी सेवा उपलब्ध • समस्तीपुर",

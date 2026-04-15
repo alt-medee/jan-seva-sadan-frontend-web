@@ -22,7 +22,7 @@ const ContactSection = () => (
             </div>
             <div>
               <h3 className="font-bold text-foreground mb-1">पता</h3>
-              <p className="text-sm text-muted-foreground">बेलवन चौक, उजियारपुर रोड, समस्तीपुर, बिहार</p>
+              <p className="text-sm text-muted-foreground">बेलवनबेलवन चौक, कोरबद्धा हाई स्कूल के नजदीक, उजियारपुर रोड, समस्तीपुर</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ const ContactSection = () => (
             </div>
             <div>
               <h3 className="font-bold text-foreground mb-1">फोन नंबर</h3>
-              <p className="text-sm text-muted-foreground">9798701014 | 9955746966</p>
+              <p className="text-sm text-muted-foreground">9798701014 | 6204954262</p>
             </div>
           </div>
 

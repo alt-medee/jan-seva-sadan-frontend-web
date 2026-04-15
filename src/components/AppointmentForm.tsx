@@ -35,8 +35,8 @@ const AppointmentForm = () => {
               <a href="tel:9798701014" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                 📞 <span className="font-medium">9798701014</span>
               </a>
-              <a href="tel:9955746966" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
-                📞 <span className="font-medium">9955746966</span>
+              <a href="tel:6204954262" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                📞 <span className="font-medium">6204954262</span>
               </a>
               <a href="https://wa.me/919798701014" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                 💬 <span className="font-medium">WhatsApp पर संपर्क करें</span>

@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import doctor1 from "@/assets/doctor1.jpg";
-import doctor2 from "@/assets/doctor2.jpg";
-import doctor3 from "@/assets/doctor3.jpg";
+// import doctor1 from "@/assets/doctor1.jpg";
+// import doctor2 from "@/assets/doctor2.jpg";
+// import doctor3 from "@/assets/doctor3.jpg";
+import doctor from "@/assets/doctor-dummy.jpg" 
 
 const doctors = [
-  { name: "Dr. Rajesh Kumar", speciality: "General Physician", exp: "15+ years", image: doctor1 },
-  { name: "Dr. Sunita Devi", speciality: "Gynaecologist", exp: "12+ years", image: doctor2 },
-  { name: "Dr. Amit Singh", speciality: "Surgeon", exp: "10+ years", image: doctor3 },
+  { name: "Dr. Rajesh Kumar", speciality: "General Physician", exp: "15+ years", image: doctor },
+  { name: "Dr. Sunita Devi", speciality: "Gynaecologist", exp: "12+ years", image: doctor },
+  { name: "Dr. Amit Singh", speciality: "Surgeon", exp: "10+ years", image: doctor },
 ];
 
 const DoctorsSection = () => (

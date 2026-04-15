@@ -10,7 +10,7 @@ import WhyChooseSection from "@/components/WhyChooseSection";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AppointmentForm from "@/components/AppointmentForm";
-import GallerySection from "@/components/GallerySection";
+// import GallerySection from "@/components/GallerySection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -30,7 +30,7 @@ const Index = () => (
     <FacilitiesSection />
     <TestimonialsSection />
     <AppointmentForm />
-    <GallerySection />
+    {/* <GallerySection /> */}
     <FAQSection />
     <ContactSection />
     <Footer />

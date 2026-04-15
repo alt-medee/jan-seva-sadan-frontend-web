@@ -9,9 +9,9 @@ const TopBar = () => (
           <span>9798701014</span>
         </a>
         <span className="opacity-40">|</span>
-        <a href="tel:9955746966" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+        <a href="tel:6204954262" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
           <Phone className="w-3.5 h-3.5" />
-          <span>9955746966</span>
+          <span>6204954262</span>
         </a>
       </div>
       <div className="flex items-center gap-4">

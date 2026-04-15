@@ -52,7 +52,7 @@ const Navbar = () => {
             className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-5 py-2.5 text-sm font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all"
           >
             <Phone className="w-4 h-4" />
-            Book Appointment
+            Call Now
           </a>
           <button
             className="lg:hidden p-2 text-foreground"
@@ -82,7 +82,7 @@ const Navbar = () => {
               href="tel:9798701014"
               className="block py-3 px-4 bg-primary text-primary-foreground rounded-lg text-sm font-semibold text-center mt-3"
             >
-              📞 Book Appointment
+              📞 Call Now
             </a>
           </div>
         </div>

@@ -4,18 +4,28 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "राजेश कुमार",
-    text: "जे. पी. सेवा सदन में मेरा ऑपरेशन बहुत अच्छे से हुआ। डॉक्टर बहुत अनुभवी हैं और स्टाफ बहुत सहयोगी है। खर्च भी बहुत कम आया।",
+    name: "रामलाल यादव",
+    text: "यहाँ कम खर्च में बहुत अच्छा इलाज मिलता है। डॉक्टर और स्टाफ बहुत सहयोगी हैं।",
     rating: 5,
   },
   {
     name: "सुनीता देवी",
-    text: "मेरे बच्चे का इलाज यहाँ हुआ। डॉक्टरों ने बहुत अच्छी देखभाल की। 24 घंटे सेवा उपलब्ध होने से बहुत सुविधा हुई।",
+    text: "हमारे गाँव के पास इतना अच्छा अस्पताल होना बहुत बड़ी बात है। इलाज भी सही और सस्ता है।",
     rating: 5,
   },
   {
-    name: "अमित शर्मा",
-    text: "समस्तीपुर में इतना अच्छा अस्पताल मिलना मुश्किल है। जे. पी. सेवा सदन ने मेरे परिवार की बहुत मदद की। धन्यवाद!",
+    name: "मुकेश कुमार",
+    text: "डॉक्टरों ने मेरी समस्या को सही तरीके से समझा और अच्छा इलाज किया। मैं पूरी तरह संतुष्ट हूँ।",
+    rating: 5,
+  },
+  {
+    name: "रेखा देवी",
+    text: "यहाँ दवाइयों पर मिलने वाला डिस्काउंट गरीब मरीजों के लिए बहुत फायदेमंद है।",
+    rating: 5,
+  },
+  {
+    name: "राजेश शर्मा",
+    text: "अस्पताल का वातावरण साफ है और मरीजों की अच्छी देखभाल की जाती है।",
     rating: 5,
   },
 ];
@@ -33,7 +43,7 @@ const TestimonialsSection = () => {
   return (
     <section className="section-padding bg-section-alt">
       <div className="container mx-auto max-w-3xl">
-        <h2 className="section-heading">मरीज़ों के अनुभव</h2>
+        <h2 className="section-heading">💬 मरीजों के अनुभव</h2>
         <div className="section-underline" />
 
         <div className="relative bg-card rounded-2xl p-8 md:p-12 border border-border shadow-lg min-h-[250px]">
@@ -82,9 +92,8 @@ const TestimonialsSection = () => {
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${
-                i === current ? "bg-primary w-6" : "bg-border"
-              }`}
+              className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-primary w-6" : "bg-border"
+                }`}
               aria-label={`Testimonial ${i + 1}`}
             />
           ))}
