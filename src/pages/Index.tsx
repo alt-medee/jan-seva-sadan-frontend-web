@@ -9,7 +9,7 @@ import ServicesSection from "@/components/ServicesSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import AppointmentForm from "@/components/AppointmentForm";
+// import AppointmentForm from "@/components/AppointmentForm";
 // import GallerySection from "@/components/GallerySection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -29,7 +29,7 @@ const Index = () => (
     <WhyChooseSection />
     <FacilitiesSection />
     <TestimonialsSection />
-    <AppointmentForm />
+    {/* <AppointmentForm /> */}
     {/* <GallerySection /> */}
     <FAQSection />
     <ContactSection />
