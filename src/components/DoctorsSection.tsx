@@ -6,7 +6,7 @@ import doctor from "@/assets/doctor-dummy.jpg"
 import drjaiprakash from "@/assets/drjai.webp";
 
 const doctors = [
-  { name: "Dr. Jai Prakash Kumar", image: drjaiprakash },
+  { name: "Dr. Jai Prakash Kumar", exp: "10+ years", image: drjaiprakash },
   // { name: "Dr. Rajesh Kumar", speciality: "General Physician", exp: "15+ years", image: doctor },
   // { name: "Dr. Sunita Devi", speciality: "Gynaecologist", exp: "12+ years", image: doctor },
   // { name: "Dr. Amit Singh", speciality: "Surgeon", exp: "10+ years", image: doctor },
@@ -47,7 +47,7 @@ const DoctorsSection = () => (
               <div className="p-5 text-center">
                 <h3 className="font-bold text-foreground text-lg">{doc.name}</h3>
                 {/* <p className="text-primary font-medium text-sm mb-1">{doc.speciality}</p> */}
-                {/* <p className="text-xs text-muted-foreground">{doc.exp} experience</p> */}
+                <p className="text-xs text-muted-foreground">{doc.exp} experience</p>
               </div>
             </motion.div>
           ))}
