@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 // import doctor2 from "@/assets/doctor2.jpg";
 // import doctor3 from "@/assets/doctor3.jpg";
 import doctor from "@/assets/doctor-dummy.jpg"
+import drjaiprakash from "@/assets/drjai.webp";
 
 const doctors = [
-  { name: "Dr. Jai Prakash Kumar", image: doctor },
+  { name: "Dr. Jai Prakash Kumar", image: drjaiprakash },
   // { name: "Dr. Rajesh Kumar", speciality: "General Physician", exp: "15+ years", image: doctor },
   // { name: "Dr. Sunita Devi", speciality: "Gynaecologist", exp: "12+ years", image: doctor },
   // { name: "Dr. Amit Singh", speciality: "Surgeon", exp: "10+ years", image: doctor },
@@ -32,7 +33,7 @@ const DoctorsSection = () => (
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl transition-shadow group"
             >
-              <div className="relative overflow-hidden h-64">
+              <div className="relative overflow-hidden h-[420px]">
                 <img
                   src={doc.image}
                   alt={doc.name}
