@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import home from "@/assets/home.jpg";
-import interiorImage from "@/assets/hospital-interior.jpg";
+// import interiorImage from "@/assets/hospital-interior.jpg";
 
 const slides = [
   {
@@ -10,24 +10,24 @@ const slides = [
     subtitle: "एवं बेहतर स्वास्थ्य के लिए पधारें…",
     desc: "24 घंटा इमरजेंसी सेवा उपलब्ध • समस्तीपुर",
   },
-  {
-    image: interiorImage,
-    title: "अनुभवी डॉक्टर,",
-    subtitle: "आधुनिक उपकरण",
-    desc: "सभी प्रकार के रोगों का विशेषज्ञ इलाज",
-  },
+  // {
+  //   image: interiorImage,
+  //   title: "अनुभवी डॉक्टर,",
+  //   subtitle: "आधुनिक उपकरण",
+  //   desc: "सभी प्रकार के रोगों का विशेषज्ञ इलाज",
+  // },
 ];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
 
-  const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
-  const prev = useCallback(() => setCurrent((p) => (p - 1 + slides.length) % slides.length), []);
+  // const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
+  // const prev = useCallback(() => setCurrent((p) => (p - 1 + slides.length) % slides.length), []);
 
-  useEffect(() => {
-    const timer = setInterval(next, 5000);
-    return () => clearInterval(timer);
-  }, [next]);
+  // useEffect(() => {
+  //   const timer = setInterval(next, 5000);
+  //   return () => clearInterval(timer);
+  // }, [next]);
 
   return (
     <section className="relative h-[420px] md:h-[560px] lg:h-[600px] overflow-hidden bg-foreground">
@@ -85,7 +85,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+      {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -96,7 +96,7 @@ const HeroSection = () => {
             aria-label={`Slide ${i + 1}`}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
