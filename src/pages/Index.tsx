@@ -41,12 +41,12 @@ const Index = () => (
       <meta property="og:description" content="Trusted healthcare services with emergency care, OPD, diagnostics & specialist doctors in Samastipur, Bihar." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://jan-seva-sadan-frontend-web.vercel.app/" />
-      <meta property="og:image" content="https://jan-seva-sadan-frontend-web.vercel.app/logo.png" />
+      <meta property="og:image" content="https://jan-seva-sadan-frontend-web.vercel.app/logo_updated.jpeg" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="J.P Seva Sadan Hospital" />
       <meta name="twitter:description" content="Affordable and quality healthcare in Bihar." />
-      <meta name="twitter:image" content="https://jan-seva-sadan-frontend-web.vercel.app/logo.png" />
+      <meta name="twitter:image" content="https://jan-seva-sadan-frontend-web.vercel.app/logo_updated.jpeg" />
     </Helmet>
 
     {/* Layout */}

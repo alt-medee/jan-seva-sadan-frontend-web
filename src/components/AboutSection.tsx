@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import slider1 from "@/assets/slider1.jpeg";
-import slider2 from "@/assets/slider2.jpeg";
 import { CheckCircle } from "lucide-react";
 
 const features = [
@@ -14,18 +12,6 @@ const features = [
 ];
 
 const AboutSection = () => {
-  const images = [slider1, slider2];
-  const [current, setCurrent] = useState(0);
-
-  // auto slide
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [images.length]);
-
   return (
     <section id="about" className="section-padding bg-background">
       <div className="container mx-auto max-w-6xl">
@@ -46,48 +32,27 @@ const AboutSection = () => {
             यहाँ अनुभवी और कुशल डॉक्टरों की टीम द्वारा सभी प्रकार की सामान्य एवं जटिल बीमारियों का उपचार आधुनिक तकनीक और उपकरणों की सहायता से किया जाता है।
           </p>
 
-          <p>
+          {/* <p>
             हमारा मुख्य उद्देश्य है कि हर व्यक्ति, चाहे वह किसी भी आर्थिक स्थिति से हो,
             उसे समय पर और उचित इलाज मिल सके। इसी कारण हम अपनी सेवाओं को किफायती बनाए रखते हैं,
             ताकि कोई भी मरीज इलाज से वंचित न रहे।
-          </p>
+          </p> */}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* SLIDER */}
+          {/* IMAGE */}
           <motion.div
-            key={current}
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-2xl shadow-xl w-full h-[350px] overflow-hidden"
+            className="rounded-2xl overflow-hidden shadow-xl w-full"
           >
-            <div className="relative w-full h-full">
-              {/* BLUR BACKGROUND */}
-              <img
-                src={images[current]}
-                className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-40"
-              />
-
-              {/* MAIN IMAGE */}
-              <img
-                src={images[current]}
-                className="relative w-full h-full object-contain"
-              />
-            </div>
-
-            {/* dots */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              {images.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setCurrent(i)}
-                  className={`h-2 rounded-full transition-all ${i === current ? "w-6 bg-white" : "w-2 bg-white/50"
-                    }`}
-                />
-              ))}
-            </div>
+            <img
+              src={slider1}
+              alt="J.P. Seva Sadan"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           {/* RIGHT CONTENT */}
@@ -97,6 +62,11 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
+            <p className="text-muted-foreground leading-relaxed">
+              हमारा मुख्य उद्देश्य है कि हर व्यक्ति, चाहे वह किसी भी आर्थिक स्थिति से हो,
+              उसे समय पर और उचित इलाज मिल सके। इसी कारण हम अपनी सेवाओं को किफायती बनाए रखते हैं,
+              ताकि कोई भी मरीज इलाज से वंचित न रहे।
+            </p>
             <p className="text-muted-foreground leading-relaxed">
               इसके साथ ही, हम दवाइयों पर विशेष छूट (Discount) भी प्रदान करते हैं,
               जिससे मरीजों पर आर्थिक बोझ कम हो सके।
@@ -109,7 +79,6 @@ const AboutSection = () => {
 
             <div className="bg-secondary rounded-xl p-5 mt-4">
               <p className="font-semibold mb-3">🌟 हमारी विशेषताएँ:</p>
-
               <div className="grid sm:grid-cols-2 gap-3">
                 {features.map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
@@ -119,8 +88,8 @@ const AboutSection = () => {
                 ))}
               </div>
             </div>
-
           </motion.div>
+
         </div>
       </div>
     </section>
