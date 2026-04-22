@@ -15,7 +15,7 @@ const ContactRow = ({ icon: Icon, label, children }: { icon: any; label: string;
 
 const Footer = () => (
   <>
-    <footer className="bg-[#0b1220] text-white">
+    <footer className="bg-[#5E7C8C] text-white">
       <div className="container mx-auto px-5 md:px-12 pt-8 md:pt-12 pb-0">
 
         {/* ── DESKTOP LAYOUT ── */}
